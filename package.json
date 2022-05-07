@@ -1,0 +1,11 @@
+{
+  "name": "@johang/carouseljs",
+  "version": "1.0.0",
+  "description": "A carousel class that can be used with js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Johan Glud Jensen",
+  "license": "ISC"
+}
