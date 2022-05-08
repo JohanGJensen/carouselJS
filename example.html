@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>example</title>
+</head>
+
+<body>
+  <section class="container">
+    <article class="container-know">
+      <div class="title-container">
+        <h2>Languages in programming</h2>
+      </div>
+      <ul class="carousel-list-know carousel-list-wrapper"></ul>
+      <div class="carousel-item-know carousel-item-wrapper"></div>
+    </article>
+  </section>
+
+  <script src="index.js"></script>
+  <script>
+    const items = [
+      {
+        li: "Javascript",
+        children: [
+          {
+            element: "div",
+            class: "carousel-item-header",
+            style: "background-color: #F9DD79",
+            children: [{ element: "h3", text: "Javascript" }],
+          },
+        ],
+      },
+      {
+        li: "React",
+        children: [
+          {
+            element: "div",
+            class: "carousel-item-header",
+            style: "background-color: #6189C6",
+            children: [{ element: "h3", text: "React" }],
+          },
+        ],
+      },
+      {
+        li: "TypeScript",
+        children: [
+          {
+            element: "div",
+            class: "carousel-item-header",
+            style: "background-color: #294E80",
+            children: [{ element: "h3", text: "TypeScript" }],
+          },
+        ],
+      },
+      {
+        li: "NodeJs",
+        children: [
+          {
+            element: "div",
+            class: "carousel-item-header",
+            style: "background-color: #68a063",
+            children: [{ element: "h3", text: "NodeJs" }],
+          },
+        ],
+      },
+      {
+        li: "Sencha Ext",
+        children: [
+          {
+            element: "div",
+            class: "carousel-item-header",
+            style: "background-color: #549F64",
+            children: [{ element: "h3", text: "Sencha Ext" }],
+          },
+        ],
+      },
+    ];
+
+    const menuClasses = {
+      wrapper: "carousel-list-know",
+      selected: "carousel-list-selected",
+      base: "carousel-list",
+      hover: "carousel-list-hover",
+    };
+    const itemClasses = {
+      wrapper: "carousel-item-know",
+      selected: "carousel-item-selected",
+      base: "carousel-item",
+      hover: "carousel-item-hover",
+    };
+
+    const classes = {
+      menu: menuClasses,
+      item: itemClasses,
+    }
+
+    const carousel = new Carousel(classes, items);
+    carousel.init();
+  </script>
+</body>
+
+</html>
+
+element {
+display: flex;
+width: 100%;
+justify-content: center;
+gap: 1em;
+position: relative;
+}

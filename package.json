@@ -1,6 +1,6 @@
 {
   "name": "@johang/carouseljs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A carousel class that can be used with js",
   "main": "index.js",
   "scripts": {
